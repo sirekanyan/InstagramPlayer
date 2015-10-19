@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.sirekanyan.instagram"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="23"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:allowBackup="false">
+        <activity android:name=".InstagramPlayer"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                        android:host="instagram.com"
+                        android:scheme="https"
+                        android:pathPrefix="/p"/>
+                <data
+                        android:host="instagram.com"
+                        android:scheme="http"
+                        android:pathPrefix="/p"/>
+                <data
+                        android:host="www.instagram.com"
+                        android:scheme="https"
+                        android:pathPrefix="/p"/>
+                <data
+                        android:host="www.instagram.com"
+                        android:scheme="http"
+                        android:pathPrefix="/p"/>
+                <data
+                        android:host="instagr.am"
+                        android:scheme="http"
+                        android:pathPrefix="/p"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

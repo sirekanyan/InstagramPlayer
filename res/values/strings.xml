@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Instagram Player</string>
+    <string name="player_not_found">Video player was not found. You may want to install VLC player.</string>
+    <string name="install">Install</string>
+    <string name="cancel">Cancel</string>
+</resources>
